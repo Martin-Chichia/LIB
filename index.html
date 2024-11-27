@@ -113,12 +113,20 @@ p a:hover {
             <input type="password" id="password" name="password" placeholder="Enter your password" required>
             
             <!-- Submit Button -->
-            <button type="submit">Login</button>
+            <button id="openPageButton">Login</button>
         </form>
         
         <!-- Registration Link -->
         <p>Don't have an account? <a href="/signup">Sign up here</a>.</p>
     </div>
     
+          <script>
+    document.getElementById('openPageButton').addEventListener('click', function() {
+      // Change the window location to the new page
+      window.location.href = "success.html"; // Replace with your page URL
+    });
+
+
+    </script>
 </body>
 </html>
